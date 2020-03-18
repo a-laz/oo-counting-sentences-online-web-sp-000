@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
+    #self.split([[:punct:]]).count works for all but complex sentences
     self.split(/\.+|\!+|\?+/).count
-    binding.pry
+    #binding.pry
   end
 end
